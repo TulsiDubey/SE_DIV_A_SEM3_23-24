@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Advanced Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Language Translator</h1>
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up" title="Speak"></i>
+              <i id="from" class="fas fa-copy" title="Copy"></i>
+            </div>
+            <select></select>
+          </li>
+          <li class="exchange">
+            <i class="fas fa-exchange-alt" title="Swap languages"></i>
+            <i class="fas fa-microphone mic-icon" title="Voice input"></i>
+          </li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up" title="Speak"></i>
+              <i id="to" class="fas fa-copy" title="Copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="translate-btn">
+        <span class="btn-text">Translate Text</span>
+        <div class="loading-dots" style="display: none;">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </button>
+    </div>
+
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
